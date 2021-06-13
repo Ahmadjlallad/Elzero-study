@@ -1,0 +1,19 @@
+*{
+    text-decoration: none;
+}
+h1{
+    color: red;
+    text-align: center;
+    background-color:black;
+}
+form{
+    text-align: center; 
+    padding-left: 10% ;
+    padding-right: 10%;
+    background-color: black;
+    color:red;
+    display: inline-block;"
+}
+a{
+    color: lightcoral;
+}
