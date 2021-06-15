@@ -1,40 +1,115 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>repl.it</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
   <!-- div contener for elements-->
-<h1 >elzero web school</h1>
-<!-- action where date get procecs-->
-<!-- name tell you what the date name is -->
-<!-- method is the way to date send 
-method have to way get, post-->
-<!-- read only in input tag -->
-  <form  action="ahmad.txt" method="GIT">
+  <h1>elzero web school</h1>
+  <!-- action where date get procecs-->
+  <!-- name tell you what the date name is -->
+  <!-- method is the way to date send method have to way get, post-->
+  <!-- read only in input tag date stil get send -->
+  <!-- disabled make the field not allowed to type and date don't get send -->
+  <!-- auto focus automaticly make carser on the type field -->
+  <!--  minlength="" maxlength=""  these atreputs limte user chrac type -->
+  <!--  input type="radio"  -->
+  <form>
     <div><a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank">HTML Input Types</a></div>
     <div>
-      <label>Username</label>
-    <input name="user name" type="email" required placeholder="username" value="@gmail.com">
+      <label for="username">Username</label>
+      <input id="username" autofocus name="user name" type="text" placeholder="username" value="ahmad">
     </div><br>
     <div>
-      <label>password</label>
-      <input name="pass" required type="password" placeholder="132456" >
-    <div>
-      <label>color</label>
-      <input type="color" value="color">
-    </div>
-    <div>
-      <label>range <a href="https://www.w3schools.com/tags/att_input_type_range.asp" target="_blank"input type="range"</a></label>
-      <input type="range" min="0" max="100" step="20" value="80" ></div>
-    <div>
-      <label>number<a href="https://www.w3schools.com/tags/att_input_type_number.asp" target="_blank"> w3schools number</a></label>
-      <input type="number" name="number" min="0" step="3" max="10"></div>
-    </div>
+      <label for="pass">password</label>
+      <input id="pass" minlength="6" maxlength="10" name="pass" type="password" placeholder="132456">
 
+      <div>
+        <label for="color">color</label>
+        <input id="color" type="color" value="color">
+      </div>
+      <hr>
+      <div>
+        <label for="range">range <a href="https://www.w3schools.com/tags/att_input_type_range.asp"
+            target="_blank">range</a></label>
+        <input id="range" type="range" min="0" max="100" step="20" value="80">
+      </div>
+      <hr>
+      <div>
+        <label for="num">number<a href="https://www.w3schools.com/tags/att_input_type_number.asp" target="_blank">
+            w3schools number</a></label>
+        <input type="number" name="number" min="0" step="3" max="10" id="num">
+      </div>
+    </div>
+    <hr>
+    <!-- radio make a multpule chose using name attripute to tie tham togthor -->
+    <div>chose your OS using radio <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio"
+        target="_blank">mdn radio</a>
+      <div><input name="os" checked type="radio" id="win" value="win"><label for="win">windows</label></div>
+      <div><input name="os" type="radio" id="lin" value="lin"><label for="lin">linux</label></div>
+      <div><input name="os" type="radio" id="mac" value="mac"><label for="mac">mac</label></div>
+    </div>
+    <hr>
+    <div>chose your OS using radio <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox"
+        target="_blank">mdn checkbox</a>
+      <div><input name="os" checked type="checkbox" id="wincheckbox"><label for="wincheckbox">windows</label></div>
+      <div><input name="os" type="checkbox" id="lincheckbox"><label for="lincheckbox">linux</label></div>
+      <div><input name="os" type="checkbox" id="maccheckbox"><label for="maccheckbox">mac</label></div>
+    </div>
+    <hr>
+    <div>
+      <label for="leg">choose your weapon <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">Mdn
+          select</a></label>
+      <select name="wep" id="leg">
+        <optgroup label="SMGs">
+          <option value="r99" selected>R99</option>
+          <option value="Alternator">Alternator</option>
+          <option value="PROWLER">PROWLER</option>
+        </optgroup>
+        <optgroup label="Marksman">
+          <option value="BB">Bocek Bow</option>
+          <option value="G7">G7 Scout</option>
+          <option value="tt">Triple Take</option>
+        </optgroup>
+      </select>
+    </div>
+    <hr>
+    <div>
+      <label for="favtxt"> Tell me about your favorites weapon <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea" target="_blank">Textarea
+          Mdn</a></label>
+      <textarea name="Tell me about your favorites weapon" id="favtxt" cols="50" rows="10"
+        placeholder="my favorite weapon is the R99"></textarea>
+    </div>
+    <hr>
+    <div>
+      <label for="photo">Uploud Your Favorite Weapon Photo <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#attr-accept" target="_blank"> Mdn
+          file</a></label>
+      <input type="file" accept=".jpg" id="photo">
+    </div>
+    <hr>
+    <div><label for="search">Search</label>
+      <input type="search" id="search">
+    </div>
+    <hr>
+    <div><label for="URL">URL</label>
+      <input type="url" id="URL">
+    </div>
+    <hr>
+    <div><label for="date">date</label>
+      <input type="date" id="date">
+    </div>
+    <hr>
+    <div><label for="time">time</label>
+      <input type="time" id="time">
+    </div>
+    <hr>
     <input type="submit" value="save">
     <input type="reset" value="clean">
     <input type="hidden" value="hidden from you">
@@ -42,53 +117,83 @@ method have to way get, post-->
 
 
 
-<hr>
+  <hr>
   <table border="1">
-    <thead><tr><td>X</td><td>Y</td><td>resalt</td></tr>
+    <thead>
+      <tr>
+        <td>X</td>
+        <td>Y</td>
+        <td>resalt</td>
+      </tr>
     </thead>
     <tbody>
-      <tr><td>0</td><td>0</td><td>0</td></tr>
-      <tr><td>0</td><td>1</td><td>0</td></tr>
-      <tr><td>1</td><td>0</td><td>0</td></tr>
-      <tr><td>1</td><td>1</td><td>1</td></tr> 
-      <tr><td colspan="3">1</td></tr> </tbody></table>
-      <hr>
-    <p>this is  line brek <br>this is line </p>
-    
+      <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td colspan="3">1</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <p>this is line brek <br>this is line </p>
+
   <!-- span for in line elemant/ br line brake>-->
   <hr>
   <!-- Entities html &lt;&gt;&asymp;-->
   <p class="frist-parg">&lt;&gt;&asymp;</p>
   <hr>
-  aside>this is  &lt;aside&gt;for side page and its semantic elements</aside>
-<hr>
+  <aside>this is &lt;aside&gt;for side page and its semantic elements</aside>
+  <hr>
 
 
   <article>this is &lt;article&gt; for side page and its semantic elements</article>
 
 
-<hr>
+  <hr>
 
 
-  <figure><caption>this is caption in side figure</caption></figure>
+  <figure>
+    <caption>this is caption in side figure</caption>
+  </figure>
 
 
-<hr>
- <audio controls><source src="https://dl.espressif.com/dl/audio/ff-16b-2c-44100hz.m4a" type="audio/mpeg"> your browser dose not support Audio tags</audio> 
-<hr>
+  <hr>
+  <audio controls>
+    <source src="https://dl.espressif.com/dl/audio/ff-16b-2c-44100hz.m4a" type="audio/mpeg"> your browser dose not
+    support Audio tags
+  </audio>
+  <hr>
 
 
-<!--
+  <!--
 <video controls><source src="2020.07.27-12.18.mp4"></video>
 
 
   <iframe width="300px" height="300ps" src="https://www.youtube.com/embed/bo-2F5MnB6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   -->
-<hr>
+  <hr>
 
 
-<hr>
+  <hr>
   <script src="script.js"></script>
-  </body>
-</html> 
+</body>
 
+</html>
