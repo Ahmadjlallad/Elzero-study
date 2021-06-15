@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>repl.it</title>
+  <title>Elzero Study</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -19,15 +19,15 @@
   <!-- auto focus automaticly make carser on the type field -->
   <!--  minlength="" maxlength=""  these atreputs limte user chrac type -->
   <!--  input type="radio"  -->
-  <form>
+  <form novalidate action="ahmad.txt" method="GET" target="_blank">
     <div><a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank">HTML Input Types</a></div>
     <div>
       <label for="username">Username</label>
-      <input id="username" autofocus name="user name" type="text" placeholder="username" value="ahmad">
+      <input id="username" autofocus name="user name" type="email" required placeholder="username" value="ahmad">
     </div><br>
     <div>
       <label for="pass">password</label>
-      <input id="pass" minlength="6" maxlength="10" name="pass" type="password" placeholder="132456">
+      <input id="pass" minlength="6" maxlength="10" name="pass" type="password" placeholder="132456" required>
 
       <div>
         <label for="color">color</label>
@@ -109,6 +109,15 @@
     <div><label for="time">time</label>
       <input type="time" id="time">
     </div>
+    <hr>
+    <label for="weapons" id="wep">Choose weapon</label>
+    <input list="weapons" name="weap" id="wep">
+    <datalist id="weapons">
+      <option value="R99">
+      <option value="R301">
+      <option value="G7">
+      <option value="30-30">
+    </datalist>
     <hr>
     <input type="submit" value="save">
     <input type="reset" value="clean">
