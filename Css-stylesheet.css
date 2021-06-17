@@ -1,0 +1,68 @@
+hr {
+    background-color: red;
+    margin: 14px;
+    padding: 1px;
+    
+}
+/* 
+block
+    take full Width If No Width
+    add line break
+    respect ever paffing, margin, high width
+Inline 
+    don't add line break
+    Don't respect width, hight
+    padding and margin just left + right
+    يععني ما بحترم هوامش و بدخل في الهوامش الثانيه عادي
+
+
+Inline-block
+    مزيج من الجوز
+    allow elemants to be placed before and after
+    respect ever paffing, margin, high width
+
+*/
+.block {
+    padding: 10px;
+    margin: 14px;
+
+}
+.inline {
+    width: 400px;
+    height: 1000px;
+
+}
+.inline-block {
+   
+    display: inline-block;
+
+}
+.none {
+    display: none;
+
+}
+.hidden {
+
+    visibility: hidden;
+}
+.inline,
+.inline-block,
+.hidden, 
+.none,
+header p,
+.block
+{
+    /* grouping for classes */
+    padding: 10px;
+    margin: 5px;
+
+    background-color: #eee;
+}
+header p {
+    text-align: center;
+    width: 60%;
+    margin-left:15% ;
+    padding: 15px;
+    width: fit-content;
+    
+}
