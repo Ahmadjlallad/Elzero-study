@@ -66,3 +66,10 @@ header p {
     width: fit-content;
     
 }
+.overflow {
+    overflow-x: hidden;
+    width: 150px;
+    height: 155px;
+
+
+}
