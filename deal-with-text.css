@@ -50,7 +50,7 @@ offset-x | offset-y | blur-radius | color
 }
 .capitalize{  
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+
     text-transform: capitalize;
     background-color: #eee;
     padding: 10px;
@@ -60,7 +60,6 @@ offset-x | offset-y | blur-radius | color
     text-transform: lowercase;
     background-color: #eee;
     padding: 10px;
-
 }
 
 .uppercase { 
@@ -69,7 +68,7 @@ offset-x | offset-y | blur-radius | color
     background-color: #eee;
     padding: 10px;
     font-size: 3em;
-    
+    font-style: italic;
 }
 .text-spacing {
     border: black 5px solid;
