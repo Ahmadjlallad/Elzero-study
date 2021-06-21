@@ -1,10 +1,10 @@
 p{
     background-color: #eee;
 }
-* {
+/* * {
 
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+    c
+} */
 header {
 
     width: 30%;
@@ -49,16 +49,18 @@ offset-x | offset-y | blur-radius | color
     text-transform: capitalize;
 }
 .capitalize{  
-
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
     text-transform: capitalize;
     background-color: #eee;
     padding: 10px;
 }
 .lowercase {    
-
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-transform: lowercase;
     background-color: #eee;
     padding: 10px;
+
 }
 
 .uppercase { 
@@ -66,7 +68,8 @@ offset-x | offset-y | blur-radius | color
     text-transform: uppercase;
     background-color: #eee;
     padding: 10px;
-
+    font-size: 3em;
+    
 }
 .text-spacing {
     border: black 5px solid;
@@ -124,5 +127,4 @@ strong {
 }
 .white-space:hover {
     overflow: visible;
-
 }
