@@ -1,0 +1,22 @@
+
+body{
+    margin: 0;
+}
+div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #eee;
+    float: left;
+    width: calc(94%/5);
+    margin-left: 1%;
+
+}
+/* 
+contant width is 100%
+6 spaces  6 * (1% or 10px width between the boxes) => 60px or 6%
+100% - 60px available  space  100% - 6% = 94%
+5 - elements the width is (100% - 60px or 6%) / 5
+
+
+*/

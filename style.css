@@ -3,7 +3,8 @@
 }
 nav {
     
-    margin-left:5% ;
+    /* margin-top:5% ; */
+    margin-bottom: auto;
 }
 ul {
     list-style: none;
@@ -15,12 +16,18 @@ h1{
     background-color:black;
 }
 .nav {
+    text-align: center;
     background-color: #eee;
     color:#1d00b3 ;
     float: left;
-    margin: 5px;
-    border: 5px black solid;
-  
+    margin: 10px;
+    border-radius: 30%;
+    overflow: hidden;
+    width: calc((100% - (12%))/4);
+
+}
+.clear{
+    clear: both;
 }
 form{
     text-align: center; 
@@ -33,7 +40,8 @@ form{
     color:red;
     display: inline-block;
     width: 46.7%;
-    margin: auto;
+    margin: 50px;
+
     margin-left: 26.8%;
     border: 3px greenyellow dotted;
 }
@@ -46,4 +54,10 @@ a{
 }
 hr {
     border: 3px red solid;
+}
+.clickit {
+    cursor: pointer;
+}
+button {
+    cursor: grabbing;
 }
