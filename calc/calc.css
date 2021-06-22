@@ -1,16 +1,14 @@
-
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
-div{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    background-color: #eee;
-    float: left;
-    width: calc(94%/5);
-    margin-left: 1%;
-
+div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #eee;
+  float: left;
+  width: calc(94% / 5);
+  margin-left: 1%;
 }
 /* 
 contant width is 100%
@@ -20,3 +18,4 @@ contant width is 100%
 
 
 */
+.

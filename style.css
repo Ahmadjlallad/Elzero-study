@@ -1,63 +1,61 @@
-*{
-    text-decoration: none;
+* {
+  text-decoration: none;
 }
+
 nav {
-    
-    /* margin-top:5% ; */
-    margin-bottom: auto;
+  /* margin-top:5% ; */
+  margin-bottom: auto;
 }
 ul {
-    list-style: none;
-    
+  list-style: none;
 }
-h1{
-    color: red;
-    text-align: center;
-    background-color:black;
+h1 {
+  color: red;
+  text-align: center;
+  background-color: black;
 }
 .nav {
-    text-align: center;
-    background-color: #eee;
-    color:#1d00b3 ;
-    float: left;
-    margin: 10px;
-    border-radius: 30%;
-    overflow: hidden;
-    width: calc((100% - (12%))/4);
-
+  text-align: center;
+  background-color: #eee;
+  color: #1d00b3;
+  float: left;
+  margin: 10px;
+  border-radius: 30%;
+  overflow: hidden;
+  width: calc((100% - (12%)) / 4);
 }
-.clear{
-    clear: both;
+.clear {
+  clear: both;
 }
-form{
-    text-align: center; 
-    /* margin-left: 30%;يعني خذ 30% من مساحة الكونتينر  */
-    /* عشان اوسط العنصر ممكن اعمل width 
+form {
+  text-align: center;
+  /* margin-left: 30%;يعني خذ 30% من مساحة الكونتينر  */
+  /* عشان اوسط العنصر ممكن اعمل width 
     و بعدين بعمل الباقي مارجن مقسومه على2  */
-    /* و صح اعمل */
-    
-    background-color: black;
-    color:red;
-    display: inline-block;
-    width: 46.7%;
-    margin: 50px;
+  /* و صح اعمل */
 
-    margin-left: 26.8%;
-    border: 3px greenyellow dotted;
+  background-color: black;
+  color: red;
+  display: inline-block;
+  width: 46.7%;
+  margin: 50px;
+
+  margin-left: 26.8%;
+  border: 3px greenyellow dotted;
 }
-a{
-    color: lightcoral;
+a {
+  color: lightcoral;
 }
-.a-for-ifram{
-    border: 3px red dashed;
-    color: greenyellow;
+.a-for-ifram {
+  border: 3px red dashed;
+  color: greenyellow;
 }
 hr {
-    border: 3px red solid;
+  border: 3px red solid;
 }
-.clickit {
-    cursor: pointer;
+clickit {
+  cursor: pointer;
 }
 button {
-    cursor: grabbing;
+  cursor: grabbing;
 }
