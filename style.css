@@ -7,7 +7,8 @@ nav {
   margin-bottom: auto;
 }
 ul {
-  list-style: none;
+  list-style-type: none;
+  padding-left: 0;
 }
 h1 {
   color: red;
@@ -17,10 +18,9 @@ h1 {
 .nav {
   text-align: center;
   background-color: #eee;
-  color: #1d00b3;
+  color: #11413e;
   float: left;
   margin: 10px;
-  border-radius: 30%;
   overflow: hidden;
   width: calc((100% - (12%)) / 4);
 }
@@ -43,6 +43,10 @@ form {
   margin-left: 26.8%;
   border: 3px greenyellow dotted;
 }
+input:focus {
+  color: #00b3a4;
+  background-color: chartreuse;
+}
 a {
   color: lightcoral;
 }
@@ -58,4 +62,32 @@ clickit {
 }
 button {
   cursor: grabbing;
+}
+table {
+  background-color: rgb(174, 184, 147);
+  width: 100%;
+  margin: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+table td {
+  padding: 5px;
+  margin: 5px;
+  background-color: rgb(174, 184, 147);
+
+  border: 3px solid #eee;
+  text-align: center;
+}
+table thead td {
+  background-color: rgb(11, 173, 194);
+  border-color: rgba(11, 173, 194, 0.322);
+  color: rgb(48, 25, 25);
+  font-weight: bolder;
+  border-width: 12px;
+}
+.last_one {
+  text-align: left;
+}
+
+a:hover {
+  color: rgb(0, 209, 45);
 }
