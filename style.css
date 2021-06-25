@@ -1,32 +1,85 @@
 * {
+  font-family: "Inconsolata", monospace;
   text-decoration: none;
 }
 
+.Click {
+  visibility: hidden;
+}
+button:hover {
+  visibility: visible;
+}
+
+header {
+  text-transform: capitalize;
+  position: sticky;
+  top: 0%;
+}
+header h1 {
+  margin: 0 495px 0;
+  padding: 0;
+  font-weight: normal;
+  border-radius: 15px;
+  color: #eee;
+  display: inline-block;
+  text-align: center;
+  background-color: crimson;
+}
 nav {
   /* margin-top:5% ; */
   margin-bottom: auto;
+  margin-left: 156.5px;
 }
+
 ul {
+  width: 82%;
+  left: 0;
+  margin-top: 0;
+  height: 50px;
+  position: relative;
+  color: rgb(255, 179, 193);
+  border-radius: 15px;
+  background-color: crimson;
   list-style-type: none;
-  padding-left: 0;
 }
-h1 {
-  color: red;
+ul li a {
+  position: absolute;
+  color: #eee;
+  top: 6px;
+  display: inline-block;
   text-align: center;
-  background-color: black;
+  width: 200px;
+  border: rgb(255, 179, 193) solid 1px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-.nav {
-  text-align: center;
+a:hover {
+  border: rgb(255, 179, 193) solid 1px;
+  color: crimson;
   background-color: #eee;
-  color: #11413e;
-  float: left;
-  margin: 10px;
-  overflow: hidden;
-  width: calc((100% - (12%)) / 4);
 }
-.clear {
-  clear: both;
+
+.nav1 {
+  top: 0;
+  margin: 15px 10px;
+  left: 20px;
 }
+
+.nav2 {
+  left: 251px;
+}
+.nav3 {
+  left: 485px;
+  top: 0;
+  margin: 15px 10px;
+}
+.nav4 {
+  left: 709px;
+  top: 0;
+  margin: 15px 10px;
+}
+
 form {
   text-align: center;
   /* margin-left: 30%;يعني خذ 30% من مساحة الكونتينر  */
@@ -47,7 +100,7 @@ input:focus {
   color: #00b3a4;
   background-color: chartreuse;
 }
-a {
+form a {
   color: lightcoral;
 }
 .a-for-ifram {
@@ -57,7 +110,7 @@ a {
 hr {
   border: 3px red solid;
 }
-clickit {
+.Click {
   cursor: pointer;
 }
 button {
@@ -86,8 +139,4 @@ table thead td {
 }
 .last_one {
   text-align: left;
-}
-
-a:hover {
-  color: rgb(0, 209, 45);
 }
