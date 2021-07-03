@@ -4,7 +4,7 @@
 }
 
 .Click {
-  visibility: hidden;
+  visibility: visible;
 }
 button:hover {
   visibility: visible;

@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 /*
 // // first challenge
 // let title_forElzero = "Elzero", description_var = "Elzero Wep School", chalengedate = "25/10";
@@ -11,7 +11,7 @@
 // console.log(card_continuer.repeat(4));
 */
 
-// unary plus 
+// unary plus
 // console.log(+"100");
 
 /*
@@ -75,8 +75,7 @@ console.log(Number.isNaN("100 ahmad"), "ahmad");
 // console.log(testArr)
 */
 
-
-// challenge 
+// challenge
 
 /*
 let a = 1_00, b = 2_00.5, c = 1e2, d = 2.4;
@@ -95,5 +94,28 @@ console.log();
 console.log(b / 3)
 */
 
-let a = ".firstChild .lastChild"
-console.log(a.toLowerCase());
+/*
+
+DOM 
+value Property 
+value property sets or returns the value of the attribute.
+or any input data
+https://www.w3schools.com/jsref/prop_attr_value.asp
+*/
+const test = document.querySelector("#username");
+console.log(test.value);
+const test2 = document.querySelector("#username");
+
+// test.style document.style change style
+
+// for button
+document.querySelector("button").addEventListener("click", function () {
+  document.querySelector(".bun").addEventListener("click", reset);
+  console.log(test2.value);
+  test.style.backgroundColor = "red";
+  test.style.fontWeight = "bold";
+});
+function reset() {
+  test.style.backgroundColor = "#eee";
+  test.style.fontWeight = "normal";
+}
